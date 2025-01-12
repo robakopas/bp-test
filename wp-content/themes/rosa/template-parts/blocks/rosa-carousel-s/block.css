@@ -1,0 +1,32 @@
+.rosa-block .carousel-item-small .card {
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rosa-block .carousel-item-small .card * {
+    position: relative;
+    z-index: 2; 
+}
+
+.rosa-block .carousel-item-small .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #28344E 0%, #46577C 100%);
+    clip-path: polygon(100% 25%, 60% 100%, 100% 100%);
+    opacity: 0.1;
+}
+.rosa-block .carousel-item-small .card-title {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+}

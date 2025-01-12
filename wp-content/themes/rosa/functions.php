@@ -69,10 +69,10 @@ function register_rosa_block($name, $title, $description, $directory) {
 add_action('acf/init', function() {
     if( function_exists('acf_register_block_type') ) {
 
-        register_rosa_block('rosa-tasks', 'Rosa Tasks', 'A custom block created with ACF.', 'rosa tasks');
-        register_rosa_block('rosa-card', 'Rosa Card', 'A custom block created with ACF.', 'rosa card');
-        register_rosa_block('rosa-carousel-l', 'Rosa Carousel Large', 'A custom block created with ACF.', 'rosa carousel l');
-        register_rosa_block('rosa-carousel-s', 'Rosa Carousel Small', 'A custom block created with ACF.', 'rosa carousel s');
+        register_rosa_block('rosa-tasks', 'Rosa Tasks', 'A custom block created with ACF.', 'rosa-tasks');
+        register_rosa_block('rosa-card', 'Rosa Card', 'A custom block created with ACF.', 'rosa-card');
+        register_rosa_block('rosa-carousel-l', 'Rosa Carousel Large', 'A custom block created with ACF.', 'rosa-carousel-l');
+        register_rosa_block('rosa-carousel-s', 'Rosa Carousel Small', 'A custom block created with ACF.', 'rosa-carousel-s');
     }
 });
 
