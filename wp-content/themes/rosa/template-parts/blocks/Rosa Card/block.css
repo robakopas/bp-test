@@ -1,0 +1,64 @@
+.rosa-block.rosa-card .card {
+    padding: 0;
+}
+
+.rosa-block.rosa-card .card-content {
+    padding: 40px
+}
+
+.rosa-block.rosa-card .card-heading {
+    font-family: Sora;
+    font-size: clamp(24px, 5vw, 34px);
+    font-weight: 800;
+    line-height: 40.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.rosa-block .card-button {
+    height: 50px;
+    width: 200px;
+    max-width: 50%;
+    margin: 0 32px;
+}
+
+@media (max-width: 576px) {
+    .rosa-block .card-button {
+        max-width: 30%;
+    }
+}
+
+.rosa-block .card-button::after, .rosa-block .card-button::before {
+    height: 50px;
+    width: 32px;
+    top: -1px;
+}
+
+.rosa-block.rosa-card .card-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: right center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.rosa-block.rosa-card .card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: polygon(100% 30%, 75% 100%, 100% 100%);
+    z-index: 1;
+}
+
+.rosa-block.rosa-card .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
